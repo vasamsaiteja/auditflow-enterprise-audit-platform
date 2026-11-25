@@ -1,57 +1,114 @@
-# AuditFlow — Enterprise Audit Management Platform
+# AuditFlow – Enterprise Audit Management Platform
 
-A portfolio project demonstrating a modern enterprise audit dashboard. The initial Day 1 milestone includes a responsive React + TypeScript dashboard, Material UI components, Redux Toolkit theme state, light/dark mode, summary cards, and fictional audit activity data.
+AuditFlow is a modern audit management dashboard designed to help organizations monitor user activities, review system events, and maintain visibility into application operations.
 
-> **Important:** This is a learning/demo application. All names, events, metrics, IP addresses and organizations shown are fictional sample data. It is not connected to any employer system.
+This project is being developed incrementally as a portfolio project using modern frontend technologies, with backend integration planned for future milestones.
 
-## Tech stack
-- React + TypeScript + Vite
-- Material UI (MUI) + Emotion
-- Redux Toolkit + React Redux
-- React Router
-- Axios
-- Recharts
+## 🚀 Tech Stack
 
-## Getting started
+### Frontend
 
-```bash
-npm install
-npm run dev
-```
+- React.js
+- TypeScript
+- Vite
+- Material UI (MUI)
+- Redux Toolkit
+- JavaScript
+- CSS
 
-Open the local URL printed by Vite (usually `http://localhost:5173`).
+### Planned Backend
 
-## Current features
-- Responsive dashboard shell and navigation
-- Light/dark theme toggle
-- Audit activity table with sample records
-- Summary metric cards
-- Typed audit event model
+- Node.js
+- Express.js
+- PostgreSQL
+- Prisma ORM
+- JWT Authentication
 
-## Planned milestones
-1. Dashboard foundation and theme switching
-2. Audit log search, filters and pagination
-3. User and role management screens
-4. Node.js + Express API
-5. PostgreSQL data model and Prisma ORM
-6. Authentication and role-based authorization
-7. Tests, Docker and deployment
+## ✨ Implemented Features
 
-## Project structure
+### Day 1 – Dashboard
+
+- Responsive dashboard layout
+- Light and dark theme support
+- Reusable statistic cards
+- Sample audit activity overview
+- Sidebar and top navigation
+
+### Day 2 – Audit Logs
+
+- Display audit records in a table
+- Search by user, action, description, and IP address
+- Filter records by status
+- Filter by activity type
+- Sort records by date and time
+- Pagination with 5, 10, and 15 rows per page
+- Empty state when no matching records are found
+- Responsive table layout
+
+## 📂 Project Structure
 
 ```text
 src/
-├── app/                 # Redux store and typed hooks
+├── app/
+│   ├── hooks.ts
+│   └── store.ts
 ├── components/
-│   ├── dashboard/       # Dashboard widgets
-│   └── layout/          # Sidebar and top navigation
-├── features/audit/      # Audit feature data and logic
-├── pages/               # Page-level components
-├── theme/               # MUI theme provider
-└── types/               # Shared TypeScript types
+│   └── layout/
+│       ├── Sidebar.tsx
+│       └── Topbar.tsx
+├── features/
+│   └── audit/
+├── pages/
+│   ├── DashboardPage.tsx
+│   └── AuditLogsPage.tsx
+├── types/
+└── App.tsx
 ```
 
-## Next steps
-- Add real client-side navigation for each sidebar item
-- Implement audit search, filtering and pagination
-- Replace sample data with API responses when the backend is ready
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/vasamsaiteja/AuditFlow.git
+cd AuditFlow
+npm install
+```
+
+### Run the application
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal.
+
+## 🛠️ Development Progress
+
+- [x] Day 1 – Dashboard and theme implementation
+- [x] Day 2 – Audit logs, search, filters, sorting and pagination
+- [ ] Day 3 – Audit log details view
+- [ ] Day 4 – User management
+- [ ] Day 5 – Roles and permissions
+- [ ] Backend API integration
+- [ ] Database integration
+- [ ] Authentication and authorization
+- [ ] Testing and deployment
+
+## 📌 Project Status
+
+Currently under active development.
+
+This is an independent portfolio project using fictional demonstration data.
+
+## 👨‍💻 Author
+
+**Saiteja Vasamsetti**
+
+- GitHub: https://github.com/vasamsaiteja
+- LinkedIn: https://www.linkedin.com/in/vasamsaiteja/
